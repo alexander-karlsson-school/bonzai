@@ -1,0 +1,55 @@
+/* FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    /* TYPOGRAPHY */
+    --text-heading-1: 5rem; /* 80px */
+    --text-heading-2: 3rem; /* 48px */
+    --text-heading-3: 2rem; /* 32px */
+    --text-heading-4: 1.75rem; /* 28px */
+
+    --text-subheading-1: 2,25rem; /* 36px */
+    --text-subheading-2: 1.5rem; /* 24px */
+
+    --text-body: 1.25rem; /* 20px */
+    --text-footer: 1rem; /* 16px */
+
+    --text-sustainability: 4rem; /* 64px */
+    
+    --text-button: 1.5rem; /* 24px */
+
+    --text-600: 600; /* Semi-Bold */
+    --text-400: 400; /* Regular */
+
+    --text-height-large: 2rem; /* 32px */
+    --text-spacing: 0.0625rem; /* 1px */ 
+
+    /* COLORS */
+    --color-white: #fff;
+    --color-grey: #DBDBDB;
+    --color-black: #000;
+    
+    --color-primary: #009966;
+    --color-secondary: #9810FA;
+
+    --bg-light: #D4FFF3;
+    --bg-dark: #101828;
+    --bg-gradient: linear-gradient(to right(#009966, #009688));
+
+    /* VISUAL EFFECTS */
+    --card-shadow: 0px 10px 10px 0px #00000040;
+
+    /* PADDINGS & MARGINS */
+    --space-large: 2rem; /* 32px */
+    --space-medium: 1rem; /* 16px */
+
+    /* BORDER RADIUS */
+
+    --radius-circle: 50%;
+    --radius-xl: 1.5625rem; /* 25px */ 
+    --radius-large: 1.5rem; /* 24px */
+    --radius-medium: 0.9375rem; /* 15px */
+    --radius-small: 0.625rem; /* 10px */
+
+}
