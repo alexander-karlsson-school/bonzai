@@ -47,7 +47,6 @@
     --space-medium: 1rem; /* 16px */
 
     /* BORDER RADIUS */
-
     --radius-circle: 50%;
     --radius-xl: 1.5625rem; /* 25px */ 
     --radius-large: 1.5rem; /* 24px */
@@ -62,3 +61,4 @@
     margin: 0;
     box-sizing: border-box;
 }
+
