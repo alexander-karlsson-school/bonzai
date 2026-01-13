@@ -73,7 +73,7 @@ body {
 h1 {
   font-size: var(--text-heading-1);
   font-weight: var(--text-400);
-  color: var(--color-white);
+  /* color: var(--color-white); */
   /* line-height: 100%; */
 }
 
@@ -161,5 +161,36 @@ header {
 
   .nav-link > a:hover {
     color: var(--color-primary);
+  }
+}
+
+main {
+  margin-top: 147.58px;
+
+  section {
+    /* background-image: url("../assets/assets/photos/unsplash/building.jpg"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../assets/assets/photos/unsplash/building.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 602px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-white);
+
+    h1 {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: var(--text-subheading-1);
+      font-weight: 400;
+    }
   }
 }
