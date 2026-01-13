@@ -38,7 +38,6 @@
   --bg-dark: #101828;
   --bg-gradient: linear-gradient(to right, #009966, #009688);
 
-<<<<<<< HEAD
   /* VISUAL EFFECTS */
   --card-shadow: 0px 10px 10px 0px #00000040;
 
@@ -56,20 +55,11 @@
   --radius-large: 1.5rem; /* 24px */
   --radius-medium: 0.9375rem; /* 15px */
   --radius-small: 0.625rem; /* 10px */
-=======
-    /* BORDER RADIUS */
-    --radius-circle: 50%;
-    --radius-xl: 1.5625rem; /* 25px */ 
-    --radius-large: 1.5rem; /* 24px */
-    --radius-medium: 0.9375rem; /* 15px */
-    --radius-small: 0.625rem; /* 10px */
->>>>>>> c10bbac0fc1384cf82299e1a2cd5b47e456eceab
 }
 
 *,
 *::before,
 *::after {
-<<<<<<< HEAD
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -173,10 +163,3 @@ header {
     color: var(--color-primary);
   }
 }
-=======
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
->>>>>>> c10bbac0fc1384cf82299e1a2cd5b47e456eceab
