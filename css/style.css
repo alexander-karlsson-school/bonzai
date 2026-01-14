@@ -44,12 +44,12 @@
   /* SPACINGS */
   --container-max: 1240px;
 
+  --space-section: 13rem;
   --space-large: 2rem; /* 32px */
   --space-medium: 1rem; /* 16px */
   --space-small: 0.75rem; /* 12px */
 
   /* BORDER RADIUS */
-
   --radius-circle: 50%;
   --radius-xl: 1.5625rem; /* 25px */
   --radius-large: 1.5rem; /* 24px */
@@ -74,7 +74,7 @@ h1 {
   font-size: var(--text-heading-1);
   font-weight: var(--text-400);
   /* color: var(--color-white); */
-  /* line-height: 100%; */
+  line-height: 100%;
 }
 
 a {
@@ -119,8 +119,16 @@ a {
   background-color: var(--color-primary-hightlight);
 }
 
-/* HEADER SECTION */
+.btn-outline {
+  border-color: var(--color-white);
+  width: 191px;
+}
 
+main {
+  margin-top: 147.583px;
+}
+
+/* HEADER SECTION */
 header {
   position: fixed;
   height: auto;
@@ -164,33 +172,62 @@ header {
   }
 }
 
-main {
-  margin-top: 147.58px;
+/* LANDING PAGE */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/assets/photos/unsplash/beach.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-block: var(--space-section);
+}
 
-  section {
-    /* background-image: url("../assets/assets/photos/unsplash/building.jpg"); */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../assets/assets/photos/unsplash/building.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
-    height: 602px;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-large);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
+  color: var(--color-white);
+}
 
-    color: var(--color-white);
+.hero-subheading {
+  font-size: var(--text-subheading-1);
+  font-weight: var(--text-400); 
+}
 
-    h1 {
-      text-align: center;
-      padding-bottom: 2rem;
-    }
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-medium);
+}
 
-    h3 {
-      text-align: center;
-      font-size: var(--text-subheading-1);
-      font-weight: 400;
-    }
+/* ABOUT PAGE */
+.about-section { 
+  background-image: url("../assets/assets/photos/unsplash/building.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/assets/photos/unsplash/building.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-block: var(--space-section);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-white);
+
+  .about-heading {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .about-subheading {
+    text-align: center;
+    font-size: var(--text-subheading-1);
+    font-weight: 400;
   }
 }
+
