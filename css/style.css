@@ -363,6 +363,20 @@ main {
 }
 
 
+/* BOOKING PAGE */
+.booking-header {
+  flex-direction: column;
+  text-align: center;
+  gap: var(--space-small);
+
+  h1 {
+    margin-top: var(--space-large);
+  }
+}
+
+.booking-page-main {
+  background-color: var(--bg-light);
+}
 
 
 
