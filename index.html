@@ -12,11 +12,11 @@
     <title>Bonz.ai - Where AI innovation meets sustainable luxury.</title>
   </head>
   <body>
-    <header>
-      <div class="header-content container flex">
+    <header class="site-header">
+      <div class="site-header-content container flex">
         <a href="index.html">
           <img
-            class="header-brand"
+            class="site-header-brand"
             src="assets/assets/logo/bonz.ai-logo-color-landscape.png"
             alt="Bonz.ai logo"
           />
@@ -38,6 +38,7 @@
       </div>
     </header>
     <main>
+      <!-- HERO -->
       <section class="hero-section">
         <div class="container">
           <article class="hero-content flex">
@@ -56,7 +57,7 @@
           </article>
         </div>
       </section>
-
+      <!-- AVAILABILITY -->
       <section class="availability-section">
         <div class="container">
           <form class="availability-form flex" action="#">
@@ -65,12 +66,12 @@
               <span class="availability-icon"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="32"
+                  height="32"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
+                  stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="lucide lucide-calendar-days-icon lucide-calendar-days"
@@ -87,19 +88,19 @@
                   <path d="M16 18h.01" />
                 </svg>
               </span>
-              <span class="availability-label">Check In</span>
+              <span class="availability-label">2026-03-13</span>
             </button>
             <!-- Check out -->
             <button type="button" class="availability-field btn flex">
               <span class="availability-icon"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="32"
+                  height="32"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
+                  stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="lucide lucide-calendar-days-icon lucide-calendar-days"
@@ -116,19 +117,19 @@
                   <path d="M16 18h.01" />
                 </svg>
               </span>
-              <span class="availability-label">Check Out</span>
+              <span class="availability-label">2026-03-15</span>
             </button>
             <!-- Guests -->
             <button type="button" class="availability-field btn flex">
               <span class="availability-icon"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="32"
+                  height="32"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
+                  stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="lucide lucide-users-round-icon lucide-users-round"
@@ -147,20 +148,58 @@
           </form>
         </div>
       </section>
-
+      <!-- VISION -->
       <section class="vision-section">
         <div class="container">
-          <div class="vision-content flex">
+          <header class="vision-content flex">
             <h2 class="vision-heading">Our vision</h2>
             <p class="vision-subheading">
               Bonz.ai reimagines the hotel experience by harmonizing
-              cutting-edge artificial intelligence with unwavering environmental
-              stewardship. We believe the future of travel is both smart and
+              cutting-edge artificial <br> intelligence with unwavering environmental
+              stewardship. We believe the future of <br> travel is both smart and
               sustainable.
             </p>
+          </header>
+          <div class="vision-cards grid">
+            <article class="card flex">
+              <header class="vision-card-header flex">
+                <div class="card-icon flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-icon lucide-brain"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>
+                </div>
+                <h3 class="vision-card-heading">AI-Powered Experience</h3>
+              </header>
+              <p class="vision-card-desc">Personalized room settings, smart recommendations, and seamless service through advanced AI technology.</p>
+            </article>
+
+            <article class="card flex">
+              <header class="vision-card-header flex">
+                <div class="card-icon flex"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf-icon lucide-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+                <h3 class="vision-card-heading">100%<br>Sustainable</h3>
+              </header>
+              <p class="vision-card-desc">Carbon-neutral <br>operations, renewable energy, and eco-friendly materials throughout the property.</p>
+            </article>
+
+            <article class="card flex">
+              <header class="vision-card-header flex">
+                <div class="card-icon flex"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles-icon lucide-sparkles"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg></div>
+                <h3 class="vision-card-heading">Luxury<br>Redefined</h3>
+              </header>
+              <p class="vision-card-desc">Premium comfort meets environmental responsibility without compromise on quality or experience.</p>
+            </article>
+
+            <article class="card flex">
+              <header class="vision-card-header flex">
+                <div class="card-icon flex"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></div>
+                <h3 class="vision-card-heading">Smart<br>Everything</h3>
+              </header>
+              <p class="vision-card-desc">Voice-controlled rooms, automated climate control, and intelligent lighting that adapts to you.</p>
+            </article>
+
+            
           </div>
         </div>
       </section>
+
     </main>
   </body>
 </html>
