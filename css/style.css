@@ -1,6 +1,6 @@
 /* FONT IMPORTS */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   /* TYPOGRAPHY */
@@ -31,7 +31,7 @@
   --color-black: #000;
 
   --color-primary: #009966;
-  --color-secondary: #88DC84;
+  --color-secondary: #88dc84;
   --color-accent: #9810fa;
 
   --color-primary-hightlight: #05ae76;
@@ -76,7 +76,7 @@ button {
 }
 
 h1 {
-  font-size: var(--text-heading-1); 
+  font-size: var(--text-heading-1);
 }
 
 h2 {
@@ -91,9 +91,9 @@ h4 {
   font-size: var(--text-heading-4);
 }
 
-h1, 
-h2, 
-h3, 
+h1,
+h2,
+h3,
 h4,
 h5,
 h6 {
@@ -231,6 +231,7 @@ main {
 .availability-section {
   background: var(--bg-gradient);
   padding-block: 4rem;
+  color: var(--color-black);
 }
 
 .availability-form {
@@ -278,14 +279,20 @@ main {
   background-color: var(--bg-light);
 }
 
+.vision-content,
+.sustainability-content {
+  flex-direction: column;
+  gap: calc(1.4 * var(--space-large));
+}
+
 .vision-section,
 .sustainability-section {
-  padding-block: 5rem;
+  padding-block: 6rem;
   text-align: center;
 }
 
-.vision-content,
-.sustainability-content {
+.vision-header,
+.sustainability-header {
   flex-direction: column;
   justify-content: center;
   gap: calc(1.4 * var(--space-large));
@@ -308,7 +315,6 @@ main {
 
 .vision-cards,
 .sustainability-cards {
-  padding-block: calc(2 * var(--space-large));
   padding-inline: var(--space-small);
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-small);
@@ -328,7 +334,6 @@ main {
 }
 
 .sustainability-cards > .card {
-
 }
 
 .vision-card-header,
@@ -350,6 +355,11 @@ main {
   margin: 0 auto;
 }
 
+.sustainability-percentage {
+  color: var(--color-primary);
+  font-size: var(--text-heading-3);
+}
+
 .card-icon > svg {
   color: #188734;
 }
@@ -358,17 +368,9 @@ main {
 .sustainability-card-desc {
   font-size: var(--text-body-1);
   line-height: 24px;
-  margin-bottom: var(--space-large);
-  opacity: .75;
+  margin-bottom: calc(1.4 * var(--space-large));
+  opacity: 0.75;
 }
-
-
-
-
-
-
-
-
 
 /* ABOUT PAGE */
 .about-section {
