@@ -76,21 +76,29 @@ button {
 }
 
 h1 {
-  font-size: var(--text-heading-1);
-  font-weight: var(--text-400);
-  /* color: var(--color-white); */
-  line-height: 100%;
+  font-size: var(--text-heading-1); 
 }
 
 h2 {
   font-size: var(--text-heading-2);
-  font-weight: var(--text-400);
-  line-height: 100%;
 }
 
 h3 {
   font-size: var(--text-heading-3);
+}
+
+h4 {
+  font-size: var(--text-heading-4);
+}
+
+h1, 
+h2, 
+h3, 
+h4,
+h5,
+h6 {
   font-weight: var(--text-400);
+  line-height: 100%;
 }
 
 a {
@@ -266,45 +274,65 @@ main {
   border: 1px solid transparent;
 }
 
-.vision-section {
+.sustainability-section {
+  background-color: var(--bg-light);
+}
+
+.vision-section,
+.sustainability-section {
   padding-block: 5rem;
   text-align: center;
 }
 
-.vision-content {
+.vision-content,
+.sustainability-content {
   flex-direction: column;
   justify-content: center;
   gap: calc(1.4 * var(--space-large));
 }
 
-.vision-heading {
+.vision-heading,
+.sustainability-heading {
   letter-spacing: var(--text-spacing);
 }
 
-.vision-subheading {
-  font-family: montserrat, inter, sans-serif;
+.vision-subheading,
+.sustainability-subheading {
   font-size: var(--text-subheading-2);
   font-weight: var(--text-400);
 }
 
-.vision-cards {
+.vision-subheading {
+  font-family: montserrat, inter, sans-serif;
+}
+
+.vision-cards,
+.sustainability-cards {
   padding-block: calc(2 * var(--space-large));
   padding-inline: var(--space-small);
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-medium);
+  gap: var(--space-small);
 }
 
-.vision-cards > .card {
+.card {
+  background-color: var(--color-white);
   flex-direction: column;
-  text-align: left;
-
   border: 1px solid #686868;
   border-radius: var(--radius-large);
   padding: var(--space-medium) 1.4rem;
   gap: var(--space-large);
 }
 
-.vision-card-header {
+.vision-cards > .card {
+  text-align: left;
+}
+
+.sustainability-cards > .card {
+
+}
+
+.vision-card-header,
+.sustainability-card-header {
   flex-direction: column;
   gap: 3rem;
 }
@@ -318,11 +346,16 @@ main {
   align-items: center;
 }
 
+.sustainability-card-header > .card-icon {
+  margin: 0 auto;
+}
+
 .card-icon > svg {
   color: #188734;
 }
 
-.vision-card-desc {
+.vision-card-desc,
+.sustainability-card-desc {
   font-size: var(--text-body-1);
   line-height: 24px;
   margin-bottom: var(--space-large);
