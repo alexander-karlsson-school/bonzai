@@ -286,7 +286,8 @@ main {
 }
 
 .vision-section,
-.sustainability-section {
+.sustainability-section,
+.experience-section {
   padding-block: 6rem;
   text-align: center;
 }
@@ -333,9 +334,6 @@ main {
   text-align: left;
 }
 
-.sustainability-cards > .card {
-}
-
 .vision-card-header,
 .sustainability-card-header {
   flex-direction: column;
@@ -372,6 +370,33 @@ main {
   opacity: 0.75;
 }
 
+.experience-content {
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-large);
+}
+
+.experience-text {
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  font-size: var(--text-body-1);
+  letter-spacing: 1px;
+}
+
+.experience-text p {
+  line-height: 32px;
+}
+
+.experience-img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-large);
+}
+
+.experience-btn {
+  width: fit-content;
+  padding: var(--space-medium);
+}
 /* ABOUT PAGE */
 .about-section {
   background-image: url("../assets/assets/photos/unsplash/building.jpg");
