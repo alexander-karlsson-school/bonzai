@@ -378,6 +378,7 @@ main {
 
 .booking-page-main {
   background-color: var(--bg-light);
+  min-height: 100vh;
 }
 
 .booking-form-section {
