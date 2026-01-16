@@ -23,10 +23,10 @@
         </a>
         <nav class="desktop-nav flex">
           <ul class="desktop-nav-list flex">
-            <li class="nav-link active-link">
+            <li class="nav-link">
               <a href="index.html" aria-current="page">Home</a>
             </li>
-            <li class="nav-link">
+            <li class="nav-link active-link">
               <a href="booking-page.html">Booking</a>
             </li>
             <li class="nav-link">
@@ -37,5 +37,103 @@
         </nav>
       </div>
     </header>
+
+    <main class="booking-page-main">
+      <section class="booking-header container flex">
+        <h1>Book Your Stay</h1>
+        <h3>Discover sustainable luxury powered by AI technology</h3>
+      </section>
+
+      <section class="booking-form-section container flex">
+        <form class="booking-form flex" action="#">
+          <div class="booking-field flex">
+            <label for="" class="booking-label">Check-in</label>
+            <div class="booking-control">
+              <span class="booking-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-calendar-days-icon lucide-calendar-days"
+                >
+                  <path d="M8 2v4" />
+                  <path d="M16 2v4" />
+                  <rect width="18" height="18" x="3" y="4" rx="2" />
+                  <path d="M3 10h18" />
+                  <path d="M8 14h.01" />
+                  <path d="M12 14h.01" />
+                  <path d="M16 14h.01" />
+                  <path d="M8 18h.01" />
+                  <path d="M12 18h.01" />
+                  <path d="M16 18h.01" />
+                </svg>
+              </span>
+              <input type="date" id="check-in" name="check_in">
+            </div>
+          </div>
+
+          <div class="booking-field flex">
+            <label for="" class="booking-label">Check-out</label>
+            <div class="booking-control">
+              <span class="booking-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-calendar-days-icon lucide-calendar-days"
+                >
+                  <path d="M8 2v4" />
+                  <path d="M16 2v4" />
+                  <rect width="18" height="18" x="3" y="4" rx="2" />
+                  <path d="M3 10h18" />
+                  <path d="M8 14h.01" />
+                  <path d="M12 14h.01" />
+                  <path d="M16 14h.01" />
+                  <path d="M8 18h.01" />
+                  <path d="M12 18h.01" />
+                  <path d="M16 18h.01" />
+                </svg>
+              </span>
+              <input type="date" id="check-out" name="check_out" >
+            </div>
+          </div>
+
+          <div class="booking-field flex">
+            <label for="guests" class="booking-label">Guests</label>
+            <div class="booking-control">
+              <select name="guests" id="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="booking-field flex">
+            <label for="room-type" class="booking-label">Room Type</label>
+            <div class="booking-control">
+              <select name="room-type" id="room-type">
+                <option value="all" selected>All Rooms</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn btn-primary booking-submit">Book now</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
