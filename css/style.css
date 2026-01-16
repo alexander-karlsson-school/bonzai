@@ -428,8 +428,7 @@ main {
   background-color: var(--color-white);
 }
 
-.amenities-buttons h4,
-.amenities-buttons p {
+.amenities-buttons button {
   font-weight: 600;
   font-size: 24px;
 }
@@ -471,6 +470,7 @@ main {
   max-width: 400px;
   height: 55%;
   width: 100%;
+  object-fit: cover;
 
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
