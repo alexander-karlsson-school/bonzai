@@ -162,6 +162,7 @@ main {
   top: 0;
   transform: translateX(-50%);
   width: 100%;
+  z-index: 99;
 
   background-color: #ffffffe7;
   backdrop-filter: blur(20px);
@@ -180,6 +181,8 @@ main {
   .site-header-brand {
     width: 322px;
   }
+
+  
 }
 
 .desktop-nav {
