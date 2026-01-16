@@ -380,9 +380,7 @@ main {
   flex-direction: column;
 }
 
-.p1,
-.p2,
-.p3 {
+.story-text p {
   margin-top: 2rem;
   margin-bottom: 3rem;
   letter-spacing: 1.5px;
@@ -411,9 +409,7 @@ main {
   align-items: center;
 }
 
-.amenities-buttons .b1,
-.amenities-buttons .b2,
-.amenities-buttons .b3 {
+.amenities-buttons button {
   width: 230px;
   height: 59px;
   margin: 0 0.2rem;
@@ -422,15 +418,12 @@ main {
   border-radius: 999px;
 
   font-weight: bolder;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .amenities-buttons .b3 {
   background-color: var(--color-white);
-}
-
-.amenities-buttons button {
-  font-weight: 600;
-  font-size: 24px;
 }
 
 .amenities-article {
