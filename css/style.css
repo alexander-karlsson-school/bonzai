@@ -67,6 +67,8 @@
 }
 
 body,
+input,
+select,
 button {
   font-family: Inter, sans-serif, "Times New Roman", Times, serif;
 }
@@ -370,6 +372,7 @@ main {
   opacity: 0.75;
 }
 
+
 .experience-content {
   grid-template-columns: 1fr 1fr;
   gap: var(--space-large);
@@ -396,6 +399,85 @@ main {
 .experience-btn {
   width: fit-content;
   padding: var(--space-medium);
+}
+
+/* BOOKING PAGE */
+.booking-header {
+  flex-direction: column;
+  text-align: center;
+  gap: var(--space-small);
+
+  h1 {
+    margin-top: var(--space-large);
+  }
+}
+
+.booking-page-main {
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.booking-form-section {
+  margin-top: var(--space-large);
+  justify-content: center;
+}
+
+.booking-form {
+  padding: var(--space-large);
+  background-color: var(--color-white);
+  border-radius: var(--radius-large);
+  box-shadow: var(--card-shadow);
+  gap: var(--space-large);
+  align-items: flex-end;
+}
+
+.booking-field {
+  flex-direction: column;
+  gap: var(--space-small);
+
+  label {
+    font-size: var(--text-body-1);
+    font-weight: var(--text-600);
+  }
+}
+
+.booking-section {
+  padding: var(--space-section);
+}
+
+.booking-control {
+  display: flex;
+  align-items: center;
+  gap: var(--space-small);
+  padding: var(--space-small);
+  border: 1px solid;
+  border-radius: var(--radius-small);
+  height: 65px;
+  width: 189px;
+
+  input, select {
+    width: 100%;
+    border: none;
+    font-weight: var(--text-600);
+    font-size: var(--text-body-2);
+  }
+
+  /* hide default date picker icon */
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+  }   
+}
+
+.booking-submit {
+  height: 65px;
+  width: 189px;
+}
+
+.booking-icon {
+  margin-right: auto;
+  display: inline-flex;
 }
 /* ABOUT PAGE */
 .about-section {
