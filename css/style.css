@@ -290,7 +290,8 @@ main {
 
 .vision-section,
 .sustainability-section,
-.experience-section {
+.experience-section,
+.bottom-section {
   padding-block: 6rem;
   text-align: center;
 }
@@ -401,6 +402,34 @@ main {
   padding: var(--space-medium);
 }
 
+.bottom-section {
+  background: var(--bg-gradient);
+}
+
+.bottom-content {
+  flex-direction: column;
+  color: var(--color-white);
+  gap: var(--space-medium);
+
+}
+
+.bottom-subheading {
+  font-size: var(--text-heading-3);
+  font-weight: var(--text-400);
+  margin-top: var(--space-medium);
+}
+
+.btn-bottom {
+  background-color: #CBCBCB;
+  margin: 0 auto;
+  color: var(--color-primary);
+  font-size: var(--text-button);
+  padding-inline: var(--space-large);
+  margin-top: var(--space-medium);
+}
+
+
+
 /* BOOKING PAGE */
 .booking-header {
   flex-direction: column;
@@ -480,6 +509,9 @@ main {
   margin-right: auto;
   display: inline-flex;
 }
+
+
+
 /* ABOUT PAGE */
 .about-section {
   background-image: url("../assets/assets/photos/unsplash/building.jpg");
