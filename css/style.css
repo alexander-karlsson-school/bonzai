@@ -181,8 +181,6 @@ main {
   .site-header-brand {
     width: 322px;
   }
-
-  
 }
 
 .desktop-nav {
@@ -542,7 +540,7 @@ main {
 }
 
 .amenities {
-  background-color: #d4fff3;
+  background-color: var(--bg-light);
 
   display: flex;
   flex-direction: column;
