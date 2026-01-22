@@ -411,7 +411,6 @@ main {
   flex-direction: column;
   color: var(--color-white);
   gap: var(--space-medium);
-
 }
 
 .bottom-subheading {
@@ -421,15 +420,13 @@ main {
 }
 
 .btn-bottom {
-  background-color: #CBCBCB;
+  background-color: #cbcbcb;
   margin: 0 auto;
   color: var(--color-primary);
   font-size: var(--text-button);
   padding-inline: var(--space-large);
   margin-top: var(--space-medium);
 }
-
-
 
 /* BOOKING PAGE */
 .booking-header {
@@ -509,12 +506,12 @@ main {
 .booking-icon {
   margin-right: auto;
   display: inline-flex;
-} 
+}
 
 .booking-results-section {
   margin-top: calc(2 * var(--space-large));
   flex-direction: column;
-  display: none
+  display: none;
 }
 
 .booking-rooms-container {
@@ -562,7 +559,7 @@ main {
 
   svg {
     margin-right: 0.5rem;
-    stroke: #FFCC00;
+    stroke: #ffcc00;
     width: 20px;
     height: 20px;
   }
@@ -587,7 +584,7 @@ main {
     gap: calc(var(--space-small) / 2);
 
     h4 {
-      color: var(--color-primary)
+      color: var(--color-primary);
     }
   }
 }
@@ -617,7 +614,7 @@ main {
   flex-wrap: wrap;
 
   .booking-room-info-feature {
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     border-radius: 5px;
     padding: 6px 12px;
   }
@@ -645,8 +642,6 @@ main {
   width: 100%;
   margin-top: auto;
 }
-
-
 
 /* ABOUT PAGE */
 .about-section {
