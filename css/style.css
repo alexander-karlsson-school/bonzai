@@ -294,6 +294,7 @@ main {
 .experience-section,
 .bottom-section {
   padding-block: 6rem;
+  padding-inline: var(--space-small);
   text-align: center;
 }
 
@@ -321,9 +322,10 @@ main {
 
 .vision-cards,
 .sustainability-cards {
-  padding-inline: var(--space-small);
+  /* padding-inline: var(--space-small); */
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-small);
+  padding: 0;
 }
 
 .card {
@@ -911,4 +913,59 @@ main {
 
 .btn-send {
   height: 64px;
+}
+
+@media screen and (max-width: 1200px) {
+  .vision-section,
+  .sustainability-section,
+  .experience-section,
+  .bottom-section {
+    padding-inline: var(--space-medium);
+  }
+
+  .vision-cards,
+  .sustainability-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card br {
+    display: none;
+  }
+
+  .experience-section {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+      url("../assets/assets/photos/unsplash/bedroom.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .experience-content {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-text {
+    text-align: center;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    gap: var(--space-large);
+
+    color: var(--color-white);
+  }
+
+  .experience-btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .experience-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .vision-cards,
+  .sustainability-cards {
+    grid-template-columns: 1fr;
+  }
 }
