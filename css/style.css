@@ -150,6 +150,10 @@ a {
   width: 191px;
 }
 
+.hidden {
+  display: none;
+}
+
 main {
   margin-top: 147.583px;
 }
@@ -913,6 +917,12 @@ main {
 
 .btn-send {
   height: 64px;
+}
+
+.submit-message {
+  grid-row: 1 / 6;
+  grid-column: 1 / -1;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {

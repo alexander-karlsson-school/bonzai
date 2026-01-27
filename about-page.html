@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/about-page.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="shortcut icon"
@@ -23,13 +24,13 @@
         </a>
         <nav class="desktop-nav flex">
           <ul class="desktop-nav-list flex">
-            <li class="nav-link active-link">
+            <li class="nav-link">
               <a href="index.html" aria-current="page">Home</a>
             </li>
             <li class="nav-link">
               <a href="booking-page.html">Booking</a>
             </li>
-            <li class="nav-link">
+            <li class="nav-link active-link">
               <a href="about-page.html">About</a>
             </li>
           </ul>
@@ -193,26 +194,46 @@
             </p>
           </article>
           <form class="contact-box">
-            <article class="box-name">
+            <article class="box-name" id="input-name">
               <p>Name: *</p>
-              <input type="text" class="input-standard" />
+              <input
+                type="text"
+                class="input-standard"
+                placeholder="Sven Svensson"
+              />
             </article>
-            <article class="box-email">
+            <article class="box-email" id="input-email">
               <p>Email: *</p>
-              <input type="text" class="input-standard" />
+              <input
+                type="text"
+                class="input-standard"
+                placeholder="example@test.com"
+              />
             </article>
-            <article class="box-phone">
+            <article class="box-phone" id="input-phone">
               <p>Phone:</p>
-              <input type="text" class="input-standard" />
+              <input
+                type="text"
+                class="input-standard"
+                placeholder="070-123 45 67"
+              />
             </article>
-            <article class="box-subject">
+            <article class="box-subject" id="input-subject">
               <p>Subject: *</p>
-              <input type="text" class="input-standard" />
+              <input
+                type="text"
+                class="input-standard"
+                placeholder="Pets allowed?"
+              />
             </article>
-            <article class="box-message">
+            <article class="box-message" id="input-message">
               <p>Message: *</p>
               <textarea class="message"></textarea>
             </article>
+
+            <h2 class="hidden submit-message" id="submit-message">
+              Message Has Been Sent Successfully!
+            </h2>
             <button class="btn-send">Send Message</button>
           </form>
         </div>
