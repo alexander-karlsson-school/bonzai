@@ -204,6 +204,34 @@ main {
   }
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  
+  .desktop-nav {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-black);
+  }
+}
+
 /* LANDING PAGE */
 .hero-section {
   background:
