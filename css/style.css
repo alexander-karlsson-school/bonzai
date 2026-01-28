@@ -221,7 +221,6 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
-  
   .site-header {
     background-color: var(--color-white);
   }
@@ -230,7 +229,6 @@ main {
     display: none;
     position: absolute;
     opacity: 0;
-    
   }
 
   .desktop-nav.active {
@@ -255,11 +253,8 @@ main {
       display: block;
       width: 100%;
     }
-
-    
-
   }
-  
+
   .hamburger {
     display: flex;
   }
@@ -269,8 +264,6 @@ main {
     height: 3px;
     background-color: var(--color-black);
   }
-
-  
 }
 
 /* LANDING PAGE */
@@ -719,6 +712,7 @@ main {
 }
 
 /* ABOUT PAGE */
+
 .about-section {
   background-image: url("../assets/assets/photos/unsplash/building.jpg");
   background:
@@ -727,7 +721,10 @@ main {
   background-position: 50% 50%;
   background-size: cover;
   padding-block: var(--space-section);
-  height: 602px;
+
+  height: 80vh;
+  max-height: 602px;
+  min-height: 300px;
 
   display: flex;
   flex-direction: column;
@@ -740,12 +737,17 @@ main {
 .about-heading {
   text-align: center;
   padding-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .about-subheading {
   text-align: center;
   font-size: var(--text-subheading-1);
   font-weight: 400;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .story,
@@ -755,6 +757,12 @@ main {
 .p3 {
   text-align: center;
   color: var(--color-black);
+}
+
+.story,
+.story-text p {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .story {
@@ -794,6 +802,7 @@ main {
   margin: 4rem 0;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -822,24 +831,27 @@ main {
 .amenities-article h4 {
   font-size: 36px;
   margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .amenities-article p {
   font-size: 24px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .amenities-container {
   max-width: 1240px;
   padding-bottom: 8rem;
 
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
 .amenities-container article {
-  height: 435px;
-  width: 400px;
+  max-height: 435px;
+  max-width: 400px;
   margin: 1rem;
 
   background-color: var(--color-white);
@@ -872,7 +884,6 @@ main {
 
 .stats {
   background: var(--bg-gradient);
-  height: 494px;
   text-align: center;
   color: var(--color-white);
 
@@ -895,8 +906,12 @@ main {
 
 .statistics {
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10rem;
   margin-top: 6rem;
+  margin-bottom: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 
   h2 {
     margin-bottom: 1rem;
@@ -994,6 +1009,12 @@ main {
   text-align: center;
 }
 
+/* ------------- */
+/* Media Querys */
+/* ------------- */
+
+/* Landing Page */
+
 @media screen and (max-width: 1200px) {
   .vision-section,
   .sustainability-section,
@@ -1046,5 +1067,70 @@ main {
   .vision-cards,
   .sustainability-cards {
     grid-template-columns: 1fr;
+  }
+}
+
+/* About Page Media */
+
+@media screen and (max-width: 630px) {
+  .about-section {
+    max-height: 400px;
+
+    .about-heading {
+      font-size: 2rem;
+    }
+
+    .about-subheading {
+      font-size: 1rem;
+    }
+  }
+
+  /* --------------------- */
+
+  .story {
+    font-size: 2rem;
+  }
+
+  .story-text p {
+    font-size: 1rem;
+  }
+
+  /* --------------------- */
+
+  .amenities-buttons {
+    flex-direction: column;
+
+    max-width: 250px;
+    width: 50vh;
+    max-height: 500px;
+    border-radius: 40px;
+    font-size: 2rem;
+  }
+
+  .amenities-article {
+    h4 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .amenities-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* --------------------- */
+}
+
+@media screen and (max-width: 1194px) {
+  .statistics article {
+    flex: 0 1 calc(50% - 10rem);
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .statistics article {
+    flex-direction: column;
   }
 }
