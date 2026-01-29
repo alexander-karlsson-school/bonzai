@@ -4,13 +4,13 @@
 
 :root {
   /* TYPOGRAPHY */
-  --text-heading-1: 5rem; /* 80px */
-  --text-heading-2: 3rem; /* 48px */
-  --text-heading-3: 2rem; /* 32px */
+  --text-heading-1: clamp(2.5rem, 8vw, 5rem); /* 80px */
+  --text-heading-2: clamp(2.6rem, 4vw, 3rem); /* 48px */
+  --text-heading-3: clamp(1.8rem, 4vw, 2rem); /* 32px */
   --text-heading-4: 1.75rem; /* 28px */
 
-  --text-subheading-1: 2.25rem; /* 36px */
-  --text-subheading-2: 1.5rem; /* 24px */
+  --text-subheading-1: clamp(1.5rem, 4vw, 2.25rem); /* 36px */
+  --text-subheading-2: clamp(1rem, 4vw, 1.5rem); /* 24px */
 
   --text-body-1: 1.25rem; /* 20px */
   --text-body-2: 1rem; /* 16px */
@@ -345,6 +345,25 @@ main {
   border: 1px solid transparent;
 }
 
+@media screen and (max-width: 940px) {
+  .availability-section {
+    /* padding-block: 12rem; */
+    
+  }
+
+  .availability-form {
+    flex-direction: column;
+    padding-block: 12rem;
+  }
+
+  .availability-field,
+  .availability-submit {
+    padding: var(--space-large);
+    width: 100%;
+  }
+
+}
+
 .sustainability-section {
   background-color: var(--bg-light);
 }
@@ -364,6 +383,8 @@ main {
   text-align: center;
 }
 
+bottom-heading {}
+
 .vision-header,
 .sustainability-header {
   flex-direction: column;
@@ -374,6 +395,7 @@ main {
 .vision-heading,
 .sustainability-heading {
   letter-spacing: var(--text-spacing);
+  font-size: var(--text-heading-2);
 }
 
 .vision-subheading,
@@ -709,6 +731,17 @@ main {
 .booking-room-reserve-btn {
   width: 100%;
   margin-top: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .booking-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .booking-room-card {
+    flex-direction: column;
+  }
 }
 
 /* ABOUT PAGE */
