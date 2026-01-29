@@ -348,7 +348,6 @@ main {
 @media screen and (max-width: 940px) {
   .availability-section {
     /* padding-block: 12rem; */
-    
   }
 
   .availability-form {
@@ -361,7 +360,6 @@ main {
     padding: var(--space-large);
     width: 100%;
   }
-
 }
 
 .sustainability-section {
@@ -383,7 +381,8 @@ main {
   text-align: center;
 }
 
-bottom-heading {}
+bottom-heading {
+}
 
 .vision-header,
 .sustainability-header {
