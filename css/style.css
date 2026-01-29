@@ -352,6 +352,25 @@ main {
   border: 1px solid transparent;
 }
 
+@media screen and (max-width: 940px) {
+  .availability-section {
+    /* padding-block: 12rem; */
+    
+  }
+
+  .availability-form {
+    flex-direction: column;
+    padding-block: 12rem;
+  }
+
+  .availability-field,
+  .availability-submit {
+    padding: var(--space-large);
+    width: 100%;
+  }
+
+}
+
 .sustainability-section {
   background-color: var(--bg-light);
 }
