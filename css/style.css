@@ -628,7 +628,7 @@ bottom-heading {
 
   img {
     width: 507px;
-    height: 440px;
+    height: 100%;
     object-fit: cover;
   }
 }
@@ -740,6 +740,10 @@ bottom-heading {
 
   .booking-room-card {
     flex-direction: column;
+  }
+
+  .booking-room-img img {
+    width: 100%;
   }
 }
 
