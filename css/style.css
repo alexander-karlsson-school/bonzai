@@ -1113,6 +1113,10 @@ footer .footer-links {
   gap: 0.5rem;
 }
 
+footer .footer-links a:hover {
+  color: var(--color-primary-hightlight);
+}
+
 .reserved {
   text-align: center;
   font-size: var(--text-subheading-2);
