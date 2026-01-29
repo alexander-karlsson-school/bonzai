@@ -273,6 +273,15 @@ main {
   }
 }
 
+.hero-section,
+.availability-section,
+.vision-section,
+.sustainability-section,
+.experience-section,
+.bottom-section {
+  animation: fadeIn 1s;
+}
+
 /* LANDING PAGE */
 .hero-section {
   background:
@@ -303,6 +312,19 @@ main {
   align-items: center;
   gap: var(--space-medium);
   font-size: var(--text-button);
+}
+
+@media screen and (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    margin-top: var(--space-large);
+  }
+
+  .hero-buttons > .btn-primary,
+  .hero-buttons > .btn-outline {
+    width: 100%;
+  }
 }
 
 .availability-section {
@@ -386,9 +408,6 @@ main {
   padding-block: 6rem;
   padding-inline: var(--space-small);
   text-align: center;
-}
-
-bottom-heading {
 }
 
 .vision-header,
@@ -751,7 +770,6 @@ bottom-heading {
 }
 
 /* ABOUT PAGE */
-
 .about-section {
   background-image: url("../assets/assets/photos/unsplash/building.jpg");
   background:
@@ -760,10 +778,7 @@ bottom-heading {
   background-position: 50% 50%;
   background-size: cover;
   padding-block: var(--space-section);
-
-  height: 80vh;
-  max-height: 602px;
-  min-height: 300px;
+  height: 602px;
 
   display: flex;
   flex-direction: column;
@@ -776,17 +791,12 @@ bottom-heading {
 .about-heading {
   text-align: center;
   padding-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .about-subheading {
   text-align: center;
   font-size: var(--text-subheading-1);
   font-weight: 400;
-
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .story,
@@ -796,12 +806,6 @@ bottom-heading {
 .p3 {
   text-align: center;
   color: var(--color-black);
-}
-
-.story,
-.story-text p {
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .story {
@@ -841,7 +845,6 @@ bottom-heading {
   margin: 4rem 0;
 
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -870,27 +873,24 @@ bottom-heading {
 .amenities-article h4 {
   font-size: 36px;
   margin-bottom: 1.5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .amenities-article p {
   font-size: 24px;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .amenities-container {
   max-width: 1240px;
   padding-bottom: 8rem;
 
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
 .amenities-container article {
-  max-height: 435px;
-  max-width: 400px;
+  height: 435px;
+  width: 400px;
   margin: 1rem;
 
   background-color: var(--color-white);
@@ -923,6 +923,7 @@ bottom-heading {
 
 .stats {
   background: var(--bg-gradient);
+  height: 494px;
   text-align: center;
   color: var(--color-white);
 
@@ -945,12 +946,8 @@ bottom-heading {
 
 .statistics {
   justify-content: center;
-  flex-wrap: wrap;
   gap: 10rem;
   margin-top: 6rem;
-  margin-bottom: 6rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
 
   h2 {
     margin-bottom: 1rem;
@@ -1140,13 +1137,8 @@ footer .footer-links {
   }
 }
 
-/* ------------- */
-/* Media Querys */
-/* ------------- */
-
-/* Landing Page */
-
 @media screen and (max-width: 1200px) {
+  .hero-section,
   .vision-section,
   .sustainability-section,
   .experience-section,
@@ -1175,6 +1167,10 @@ footer .footer-links {
     grid-template-columns: 1fr;
   }
 
+  .experience-text br {
+    display: none;
+  }
+
   .experience-text {
     text-align: center;
     grid-row: 1 / -1;
@@ -1185,12 +1181,15 @@ footer .footer-links {
   }
 
   .experience-btn {
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
   }
 
   .experience-img {
     display: none;
+  }
+
+  .btn-bottom {
+    width: 100%;
   }
 }
 
