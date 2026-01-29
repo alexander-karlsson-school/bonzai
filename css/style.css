@@ -1283,3 +1283,12 @@ footer .footer-links {
     }
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  top {
+    opacity: 1;
+  }
+}
