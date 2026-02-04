@@ -73,6 +73,11 @@ button {
   font-family: Inter, sans-serif, "Times New Roman", Times, serif;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 button {
   cursor: pointer;
 }
@@ -556,7 +561,7 @@ main {
 
 .booking-page-main {
   background-color: var(--bg-light);
-  min-height: 100vh;
+  height: 100%;
 }
 
 .booking-form-section {
