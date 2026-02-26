@@ -729,6 +729,7 @@ main {
 .booking-room-info-features {
   gap: calc(var(--space-small));
   flex-wrap: wrap;
+  list-style: none;
 
   .booking-room-info-feature {
     background-color: #d9d9d9;
